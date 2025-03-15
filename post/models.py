@@ -11,6 +11,6 @@ class Post(models.Model):
     content=models.TextField()
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
-    #image=models.ImageField(upload_to='images/', blank=True) #blank=true significa que el campo no es obligatorio
+    image=models.ImageField(upload_to='images/', blank=True) #blank=true significa que el campo no es obligatorio
     def __str__(self): 
         return self.title 
